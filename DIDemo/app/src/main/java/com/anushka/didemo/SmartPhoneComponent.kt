@@ -1,0 +1,12 @@
+package com.anushka.didemo
+
+import dagger.Component
+
+
+@Singleton
+@Component(modules = [MemoryCardModule::class , NCBatteryModule::class])
+interface SmartPhoneComponent {
+   //fun getSmartPhone() : SmartPhone
+
+   fun inject(mainActivity:MainActivity)
+}
